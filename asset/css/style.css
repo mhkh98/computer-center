@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "Droid_Arabic_Kufi";
+    src: url(../fonts/Droid_Arabic_Kufi.ttf);
+}
+
+* {
+    font-family: "Droid_Arabic_Kufi", sans-serif !important;
+}
+
+body {
+    background: #f2f7fc !important;
+}
+
+.triangle {
+    position: absolute;
+    background: #213469;
+    top: 5rem;
+    left: -7%;
+    width: 60px;
+    height: 60px;
+    transform: rotate(224deg);
+    z-index: 1;
+    border-radius: 9px;
+    transition: 1.3s !important;
+}
+
+.btn-uob {
+    background: #213469 !important;
+}
+
+.btn-uob-a {
+    color: #213469 !important;
+}
+
+.btn-uob a {
+    color: #fff !important;
+}
+
+.shadow {
+    background-image: linear-gradient(to top, #e7f0fd00 0%, #accbee80 100%);
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+}
+
+.card-img-box img {
+    position: relative;
+    border-radius: 50%;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 0px 5px rgb(0 0 0 / 10%);
+    z-index: 555;
+    transition: 1s !important;
+}
+
+.card {
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
+    transition: all .5s ease;
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%) !important;
+}
+
+.rounded-5 {
+    border-radius: 1.3rem !important;
+}
+
+.card-body {
+    transition: 2s !important;
+}
+
+.card:hover .card-body {
+    display: block !important;
+    /* background: rgb(16 120 143) !important; */
+}
+
+.link {
+    color: #6a8094 !important;
+}
+
+.card:hover .li-hover:hover>a {
+    margin-right: 5px !important;
+}
+
+.card:hover .li-hover:hover>.list-styled {
+    display: inline-block !important;
+}
+
+.card:hover .li-hover {
+    transition: all 0.2s cubic-bezier(.25, .8, .25, 1) !important;
+    position: relative !important;
+}
+
+.list-styled {
+    width: 10px;
+    height: 10px;
+    background: #213469;
+    top: 10px;
+    border-radius: 50px;
+    position: absolute;
+    right: -10px;
+}
+
+.card:hover>.triangle {
+    top: 11.4rem;
+    transform: rotate(0deg);
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+}
+
+.card:hover .card-img-box img {
+    box-shadow: 0px 1px 1px 10px rgb(94 183 235 / 20%);
+}
+
+.card:hover>.btn-uob-a {
+    color: #eeeeee !important;
+    z-index: 2;
+}
+
+.card-footer {
+    position: relative !important;
+    transition: 1s ease !important;
+    bottom: -50px !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.card:hover>.card-footer {
+    display: block !important;
+    bottom: 0 !important;
+}
+
+.rounded-custom {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .4s ease-in;
+}
+
+.rounded-custom h5 {
+    line-height: 200px;
+}
+
+.rounded-custom:hover {
+    background: none !important;
+    border: 5px solid #293b6e !important;
+}
+
+.rounded-custom:hover>h5 {
+    color: #213469 !important;
+}
+
+
+/* ssss */
+
+.table-rtl {
+    direction: rtl !important;
+}
+
+.table-rtl tr {
+    box-shadow: 0px 0px 9px 0px rgb(0 0 0 / 10%) !important;
+}
+
+.table-rtl tr td {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.border-table {
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+
+.fs-8 {
+    font-size: 0.8rem !important;
+}
+
+.fs-9 {
+    font-size: 0.6rem !important;
+}
+
+.text-dark-hover {
+    transition: .3s;
+    color: #213469 !important;
+}
+
+.text-dark-hover:hover {
+    color: #0a58ca !important;
+}
+
+.fa-svg {
+    width: 30px;
+    height: 30px;
+}
+
+.underline,
+.underline2 {
+    position: relative;
+}
+
+.underline::before,
+.underline2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1DA1F2;
+    transition: width 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+    opacity: .3;
+}
+
+.underline2::before {
+    background-color: #fff;
+    height: 1px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before,
+    .underline2:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
+
+.opacity-80 {
+    opacity: .9;
+}
+
+.footer-hr {
+    border-bottom: 2px solid #1DA1F2;
+}
+
+a.link-footer,
+.link-footer {
+    color: #1DA1F2 !important;
+}
+
+a img.fa-svg {
+    transition: transform .2s;
+}
+
+a img.fa-svg:hover {
+    transform: scale(1.3) !important;
+}
+
+
+/* ssss */
+
+.card-top {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 50px;
+    left: -15px;
+    background: #213469;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    z-index: 2;
+}
+
+.card-top::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    width: 15px;
+    height: 30px;
+    background: #213469;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    z-index: 2;
+}
+
+.card-top::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    width: 15px;
+    height: 15px;
+    background: #213469;
+}
+
+.a-color {
+    color: #213469 !important;
+}
+
+.a-card-top {
+    transition: all .3s;
+}
+
+.a-card-top:hover {
+    margin-right: 5px !important;
+    color: #0d6efd !important;
+}
+
+.card {
+    transition: all .3s ease-in !important;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 9px 0px rgb(0 0 0 / 30%) !important;
+}
+
+.d-absolute {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: -15px;
+    background: transparent;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    z-index: 3;
+}
+
+.teacher-img {
+    width: 90px !important;
+    height: 100px !important;
+    border: 2px solid #ccc;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.teacher-img:hover {
+    border: 2px solid #a8a8a8;
+}
+
+.card:hover>.teacher-img {
+    border: 2px solid #a8a8a8;
+}
+
+.table-img {
+    width: 150px !important;
+    height: 150px !important;
+    border: 2px solid #ccc;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.mt-custom {
+    margin-top: 35px !important;
+}
+
+.a-table:hover .table-img {
+    border: 8px solid #ffc107 !important;
+    background-color: transparent !important;
+}
+
+
+/* .a-table:hover .a-color {
+    font-size: 1.3em;
+} */
