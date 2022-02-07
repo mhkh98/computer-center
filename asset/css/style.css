@@ -260,7 +260,8 @@ a img.fa-svg:hover {
     width: 100%;
     height: 50px;
     left: -15px;
-    background: #213469;
+    background: #1c2331;
+    opacity: 0.9;
     border-radius: 50px;
     border-bottom-left-radius: 0;
     z-index: 2;
@@ -272,7 +273,7 @@ a img.fa-svg:hover {
     top: 50px;
     width: 15px;
     height: 30px;
-    background: #213469;
+    background: #1c2331;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     z-index: 2;
@@ -284,11 +285,26 @@ a img.fa-svg:hover {
     top: 50px;
     width: 15px;
     height: 15px;
-    background: #213469;
+    background: #1c2331;
 }
 
 .a-color {
     color: #213469 !important;
+}
+
+.bg-color {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.bg-color2 {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.bg-color3 {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 .a-card-top {
@@ -352,6 +368,24 @@ a img.fa-svg:hover {
 .a-table:hover .table-img {
     border: 8px solid #ffc107 !important;
     background-color: transparent !important;
+    background-image: none !important;
+}
+
+.a-table:hover .table-img .bg-color {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+.custom-shadow::before {
+    content: '';
+    position: relative;
+    bottom: 0;
+    top: 217px;
+    width: 15rem;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    filter: blur(10px);
 }
 
 
