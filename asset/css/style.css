@@ -344,11 +344,12 @@ a img.fa-svg:hover {
     transition: all .3s ease;
 }
 
-.teacher-img:hover {
-    border: 2px solid #a8a8a8;
-}
 
-.card:hover>.teacher-img {
+/* .teacher-img:hover {
+    border: 2px solid #a8a8a8;
+} */
+
+.card:hover .teacher-img {
     border: 2px solid #a8a8a8;
 }
 
@@ -371,6 +372,14 @@ a img.fa-svg:hover {
     background-image: none !important;
 }
 
+.a-table h5 {
+    transition: .3s ease;
+}
+
+.a-table:hover>h5 {
+    color: rgb(0, 147, 233) !important;
+}
+
 .a-table:hover .table-img .bg-color {
     background-color: transparent !important;
     background-image: none !important;
@@ -387,8 +396,3 @@ a img.fa-svg:hover {
     z-index: 1;
     filter: blur(10px);
 }
-
-
-/* .a-table:hover .a-color {
-    font-size: 1.3em;
-} */
